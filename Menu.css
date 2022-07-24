@@ -338,7 +338,7 @@ h2{
     flex-direction: column;
   }
   .card .face.front img {
-    box-shadow: 0 0 15px purple;
+    box-shadow: 0 0 10px #d5420c;
   }
   .card{
     padding-top: 5px;
