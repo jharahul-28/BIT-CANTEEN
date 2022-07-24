@@ -37,7 +37,6 @@ body{
     width: 100%;
     padding: 0 10px;
     margin: 30px 0 10px;
-    /* transition: 0.5s; */
 }
 
 .container .row100 .inputBox{
@@ -54,6 +53,7 @@ body{
     background: transparent;
     box-shadow: none;
     border: none;
+    outline: none;
     font-size: 18px;
     padding: 0 10px;
     z-index: 1;
@@ -65,6 +65,7 @@ body{
     top: 0;
     left: 0;
     line-height: 40px;
+    font-size: 18px;
     padding: 0 10px;
     display: block;
     transition: 0.5s;
@@ -89,6 +90,18 @@ body{
     pointer-events: none;
 }
 
+.container .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
 .container .row100 .inputBox input:focus ~ .line, .container .row100 .inputBox input:valid ~ .line{
     height: 100%;
 }
@@ -98,8 +111,7 @@ body{
     width: 100%;
     height: 100px;
     padding: 10px 0;
-    /* background: #45f3ff;
-    transition: 0.5s; */
+    transition: 0.5s;
 }
 
 .container .row100 .inputBox.textarea textarea{
@@ -112,7 +124,7 @@ body{
     left: -10px;
 }
 
-.container .row100 .inputBox textarea:focus ~ .text, .container .row100 .inputBox textarea:valid ~ .text{
+.container .row100 .inputBox textarea:focus ~ .line, .container .row100 .inputBox textarea:valid ~ .line{
     height: 100%;
     color: #45f3ff;
 }
